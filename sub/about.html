@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About | ePainting</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="../assets/styles/w3.css"/>
+<link rel="stylesheet" href="../assets/font-awesome-4.6.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../assets/styles/style.css"/>
+<link rel="shortcut icon" type="image/png" href="../assets/epainting.png"/>
+<script src="../assets/jquery/jquery-3.1.1.js"></script>
+<script src="../assets/scripts/script.js"></script>
+
+<style>
+.bgimg-4 {min-height:75%;}
+@media screen and (min-width: 600px) {
+	.my-div-center .my-icon {font-size:14em;}
+	.my-icon-small {display:none;}
+	.my-margin-left {margin-left:16.66666%;}
+	.my-polaroid:hover {width: 150%;margin-left:-25%;}
+}
+@media screen and (max-width: 601px) {
+	.my-div-center h1 {text-align:center;}
+	.my-div-center .my-icon {font-size:8em;}
+	.my-icon-small {display:inline-block;}
+	.my-margin-left {margin-left:0;}
+}
+.w3-container {min-height: 100%; display:table;width:100%;}
+.w3-container .my-div-center {display:table-cell;vertical-align:middle;}
+img {width:100%;display:block;margin:0;-webkit-filter: grayscale(1);transition: 0.3s all;}
+img:hover {-webkit-filter: grayscale(0);}
+
+.my-polaroid {
+	height: auto;
+	width: 100%;
+	display: block;
+	padding: 16px;
+	text-decoration:none;
+	text-align: center;
+	background-color: #f1f1f1;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+	transition: 0.4s all ease-out;
+}
+.my-polaroid:hover {background-color:#fff; transform:rotate(0deg);box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;}
+.my-polaroid .my-name {margin-bottom:0;}
+.my-polaroid .my-position {margin:0;}
+
+.my-rotate-1 {transform: rotate(8deg);}
+.my-rotate-2 {transform: rotate(-12deg);}
+.my-rotate-3 {transform: rotate(6deg);}
+.my-rotate-4 {transform: rotate(12deg);}
+.my-rotate-5 {transform: rotate(-20deg);}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate-top" style="position:fixed;">
+  <ul class="topnav" id="myTopnav">
+	<li class="w3-teal"><strong><a href="../index.html" class="my-title w3-hover-white"><span>e</span>Painting</a></strong></li>
+    <li><a href="../index.html"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+	<li><a href="product.html"><i class="fa fa-paint-brush"></i>&nbsp; Product</a></li>
+	<li><a href="about.html"><i class="fa fa-user"></i>&nbsp; About</a></li>
+	<li><a href="contact.html"><i class="fa fa-envelope"></i>&nbsp; Contact Us</a></li>
+	<li class="icon">
+	  <a href="javascript:void(0);" onclick="showNavigation()">&#9776;</a>
+	</li>
+  </ul>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container my-nav-margin w3-animate-zoom">
+  <div class="w3-display-middle w3-animate-opacity" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-shadow w3-text-light-grey w3-wide">ABOUT US</span>
+  </div>
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+	<a href="#next" class="w3-text-white w3-hover-text-light-grey my-size-4"><i class="fa fa-angle-down"></i></a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div id="next" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-twothird">
+		  <h1 class="w3-animate-left">What is <span class="title"><span>e</span>Painting</span>? <i class="fa fa-paint-brush w3-text-teal my-icon-small"></i></h1>
+		  <h5 class="w3-padding-32 w3-animate-opacity">
+			<span class="my-title"><span>e</span>Painting</span> is a one-of-a-kind online art gallery where buyers could buy famous paintings 
+			painted by the most renowned artists and painters worldwide. Our team collects 
+			all kinds of paintings starting from the Renaissance period until the modern age. 
+			In the new millennium, painting has recovered its popularity, and the practice 
+			has remained fairly unchanged. Paints remain a mixture of colored pigment and binder, 
+			and common subject matters still comprise imagery or inspiration from the objects or events 
+			in artists' daily lives. The contemporary painter's palette consists not only of colors, 
+			but the range of historic painting styles. 
+		  </h5>
+
+		  <p class="w3-text-grey w3-animate-opacity">
+			
+		  </p>
+		</div>
+
+		<div class="w3-third w3-center w3-hide-small">
+		  <i class="fa my-icon fa-paint-brush w3-padding-64 w3-text-teal w3-animate-zoom"></i>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-third w3-center w3-hide-small w3-animate-zoom">
+		  <i class="fa my-icon fa-picture-o w3-padding-64 w3-text-teal w3-margin-right"></i>
+		</div>
+
+		<div class="w3-twothird">
+		  <h1 class="w3-animate-right">What do we do? <i class="fa fa-picture-o w3-text-teal w3-margin-right my-icon-small"></i></h1>
+		  <h5 class="w3-padding-32 w3-animate-opacity">
+			Paintings both reflect the artist's point-of-view and possess an independent voice 
+			which speaks a unique message to each beholder.  Some collectors focus on media, 
+			such as oil paintings on canvas, or watercolors. Others specialize in a particular style, 
+			be it fine art, street art, or expressionist paintings.
+		  </h5>
+
+		  <p class="w3-text-grey w3-animate-opacity">
+			As the world's largest online art gallery, <span class="my-title"><span>e</span>Painting</span> is thrilled to 
+			help people everywhere discover, fall in love with, and own one-of-a-kind paintings 
+			by some of the most talented emerging artists from around the world.
+		  </p>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-twothird">
+		  <h1 class="w3-animate-left">What do we offer? <i class="fa fa-pencil w3-text-teal my-icon-small"></i></h1>
+		  <h5 class="w3-padding-32 w3-animate-opacity">
+			  We offer: <br/><strong>Global Selection</strong>; we have an unparalleled selection of paintings, photography, 
+			  sculpture, and drawings by over 50,000 artists from around the world. 
+			  <br/><strong>Satisfaction Guaranteed</strong>; our 7-day 100% money-back guarantee allows you to buy with confidence. 
+			  If for any reason you're not satisfied with your purchase, return it and we'll help you find a work you love. 
+			  <br/><strong>Original Art for Any Budget</strong>; <span class="my-title"><span>e</span>Painting</span> features works at a wide range of prices to suit all budgets and projects. 
+			  <br/><strong>Global Shipping</strong>; we handle all aspects of international shipping and customs for a completely hassle-free delivery.
+		  </h5>
+		</div>
+
+		<div class="w3-third w3-center w3-hide-small w3-animate-zoom">
+		  <i class="fa my-icon fa-pencil w3-padding-64 w3-text-teal"></i>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-third w3-center w3-hide-small w3-animate-zoom">
+		  <i class="fa my-icon fa-search w3-padding-64 w3-text-teal w3-margin-right"></i>
+		</div>
+
+		<div class="w3-twothird">
+		  <h1 class="w3-animate-right">What are we looking for? <i class="fa fa-search w3-text-teal w3-margin-right my-icon-small"></i></h1>
+		  <h5 class="w3-padding-32 w3-animate-opacity">
+			We believe in paying artists the maximum possible amount in order to have a healthy, 
+			sustainable relationship. We pay the highest earnings in the industry. 
+			Artists receive 70% of the sale price for original works and 70% of net profit for <span class="my-title"><span>e</span>Painting</span> prints. 
+			One of <span class="my-title"><span>e</span>Painting</span>'s goals is to help artists sell art. 
+			We understand artists have a number of options, so we've made <span class="my-title"><span>e</span>Painting</span>'s Sales Agreement 
+			non-exclusive.</h5>
+
+		  <p class="w3-text-grey w3-animate-opacity">
+			All we ask is for you to keep your artwork up-to-date and de-list the 
+			art for sale if it becomes unavailable.
+		  </p>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-twothird">
+		  <h1 class="w3-animate-left">Who are we? <i class="fa fa-users w3-text-teal my-icon-small"></i></h1>
+		  <h5 class="w3-padding-32 w3-animate-opacity">
+			We, the collectors, offer an unparalleled selection of paintings, drawings, 
+			sculpture and photography in a range of prices, and it provides artists from around the world 
+			with an expertly curated environment in which to exhibit and sell their work.
+		  </h5>
+
+		  <p class="w3-text-grey w3-animate-opacity">
+			Based in Chicago, <span class="my-title"><span>e</span>Painting</span> is redefining the experience of buying and selling 
+			art by making it easy, convenient and welcoming for both collectors and artists. 
+		  </p>
+		</div>
+
+		<div class="w3-third w3-center w3-hide-small w3-animate-zoom">
+		  <i class="fa my-icon fa-users w3-padding-64 w3-text-teal"></i>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-padding-64 w3-black w3-center w3-opacity">
+  <div class="w3-clear"></div>
+  <h1 class="w3-text-shadow w3-animate-opacity"><b>THE <span class="my-title"><span>e</span>Painting</span> STAFF</b></h1>
+  <p><b>Members of the <span class="my-title"><span>e</span>Painting</span> you love.</b></p>
+</header>
+
+<div class="w3-row w3-light-grey w3-padding-128">
+	<div class="w3-content w3-clear">
+		<div class="w3-third">
+			<a class="my-polaroid my-rotate-1 w3-animate-right">
+				<img src="../assets/images/members/leo.jpg" alt="Felix, Leo Andrei"/>
+				<h3 class="my-name">Felix, Leo Andrei</h3>
+				<h5 class="my-position w3-text-teal">Collector</h5>
+			</a>
+		</div>
+		<div class="w3-third">
+			<a class="my-polaroid my-rotate-2 w3-animate-top">
+				<img src="../assets/images/members/katrina.jpg" alt="Esdicul, Katrina Ysabel V."/>
+				<h3 class="my-name">Esdicul, Katrina Ysabel V.</h3>
+				<h5 class="my-position w3-text-teal">Founder</h5>
+			</a>
+		</div>
+		<div class="w3-third">
+			<a class="my-polaroid my-rotate-3 w3-animate-left">
+				<img src="../assets/images/members/tristan.jpg" alt="Dizon, Tristan Amiel"/>
+				<h3 class="my-name">Dizon, Tristan Amiel</h3>
+				<h5 class="my-position w3-text-teal">Collector</h5>
+			</a>
+		</div>
+	</div>
+	<div class="w3-content w3-clear" style="margin-top: 0;">
+		<div class="w3-third my-margin-left">
+			<a class="my-polaroid my-rotate-4 w3-animate-left">
+				<img src="../assets/images/members/rylee.jpg" alt="Espiritu, Jefferson Rylee F."/>
+				<h3 class="my-name">Espiritu, Jefferson Rylee F.</h3>
+				<h5 class="my-position w3-text-teal">Co-Founder</h5>
+			</a>
+		</div>
+		<div class="w3-third">
+			<a class="my-polaroid my-rotate-5 w3-animate-right">
+				<img src="../assets/images/members/sherry.jpg" alt="Egana, Sherry Gil M."/>
+				<h3 class="my-name">Egana, Sherry Gil M.</h3>
+				<h5 class="my-position w3-text-teal">Co-Founder</h5>
+			</a>
+		</div>
+	</div>
+	<div class="w3-clear"></div>
+</div>
+
+<!-- Last -->
+<div class="w3-row-padding w3-padding-64" style="min-height: 50%; padding: 16px;">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-center">
+		  <h1 class="w3-animate-top">Be one of us? <i class="fa fa-envelope w3-text-teal my-icon-small"></i></h1>
+		  <h5 class="w3-animate-opacity">
+			If you'd like to be a part of the <span class="my-title"><span>e</span>Painting</span> community, send us an e-mail! We'll reply to you as soon as possible.
+		  </h5>
+		</div>
+		<div class="w3-center w3-hide-small w3-animate-zoom">
+		  <i class="fa my-icon fa-envelope w3-padding-16 w3-text-teal"></i>
+		</div>
+		<div class="w3-center w3-animate-opacity">
+		  <a href="contact.html" class="w3-btn w3-light-grey w3-padding-xlarge" style="margin-top:32px">CONTACT US &raquo;</a>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48">
+  <div class="w3-xlarge w3-padding-8">
+    <a href="https://www.facebook.com" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.pinterest.com/" target="_blank" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+    <a href="https://twitter.com/" target="_blank" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.flickr.com/" target="_blank" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p class="my-copyright"><span class="my-title"><span>e</span>Painting</span> &copy; 2016. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

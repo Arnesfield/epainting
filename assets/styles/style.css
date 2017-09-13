@@ -1,0 +1,131 @@
+@font-face { font-family: "Raleway"; src: url("../fonts/raleway/Raleway-Regular.ttf"); }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+::-webkit-input-placeholder {font-family: sans-serif,"Raleway";}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bg-chicago {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../images/img1.jpg');
+    min-height: 100%;
+}
+
+/* Second image */
+.bgimg-2 {
+    background-image: url("../images/img2.jpg");
+    min-height: 50%;
+}
+
+/* Third image */
+.bgimg-3 {
+    background-image: url("../images/img3.jpg");
+    min-height: 50%;
+}
+
+/* Fourth image */
+.bgimg-4 {
+    background-image: url("../images/img4.jpg");
+    min-height: 50%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+/* topnav */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.w3-btn { font-weight:bold }
+
+/* my */
+.my-title {font-variant: small-caps;}
+.my-title span {font-variant: none;}
+.my-copyright {color: #bcbcbc;}
+.my-center {text-align: center;}
+
+@media screen and (min-width:600px) {
+	.my-size-3 {font-size:3em;}
+	.my-size-4 {font-size:4em;}
+}
+
+@media screen and (max-width:601px) {
+	.my-size-3 {font-size:2em;}
+	.my-size-4 {font-size:2.5em;}
+}
+
+
+.my-collection img {width:100%;}
+
+.my-nav-margin {margin-top: 58px;}
+
+.bg-chicago {
+    background-image: url("../images/bg-chicago.jpg");
+    min-height: 50%;
+}

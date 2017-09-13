@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us | ePainting</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="../assets/styles/w3.css"/>
+<link rel="stylesheet" href="../assets/font-awesome-4.6.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../assets/styles/style.css"/>
+<link rel="shortcut icon" type="image/png" href="../assets/epainting.png"/>
+<script src="../assets/jquery/jquery-3.1.1.js"></script>
+<script src="../assets/scripts/script.js"></script>
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<style>
+.bg-chicago {min-height: 75%;}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate-top" style="position:fixed;">
+  <ul class="topnav" id="myTopnav">
+	<li class="w3-teal"><strong><a href="../index.html" class="my-title w3-hover-white"><span>e</span>Painting</a></strong></li>
+    <li><a href="../index.html"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+	<li><a href="product.html"><i class="fa fa-paint-brush"></i>&nbsp; Product</a></li>
+	<li><a href="about.html"><i class="fa fa-user"></i>&nbsp; About</a></li>
+	<li><a href="contact.html"><i class="fa fa-envelope"></i>&nbsp; Contact Us</a></li>
+	<li class="icon">
+	  <a href="javascript:void(0);" onclick="showNavigation()">&#9776;</a>
+	</li>
+  </ul>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bg-chicago w3-display-container my-nav-margin w3-animate-zoom">
+  <div class="w3-display-middle w3-animate-opacity" style="white-space:nowrap;">
+     <span class="w3-xxlarge w3-text-shadow w3-text-light-grey w3-wide">CONTACT US</span>
+  </div>
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+	<a href="#next" class="w3-text-white w3-hover-text-light-grey my-size-4"><i class="fa fa-angle-down"></i></a>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="next" class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-animate-opacity"><span class="my-title"><span>e</span>Painting</span> OFFICE</h3>
+  <p class="w3-center w3-animate-opacity"><em>We'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale w3-animate-left" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section w3-animate-right">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: epainting@epainting.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
+      <form name="contact-form" method="post">
+		  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+			<div class="w3-half">
+			  <input class="w3-input w3-border w3-hover-light-grey" type="text" name="name" placeholder="Name*" required>
+			</div>
+			<div class="w3-half">
+			  <input class="w3-input w3-border w3-hover-light-grey" type="text" name="email" placeholder="Email*" required>
+			</div>
+		  </div>
+		  <input class="w3-input w3-border w3-hover-light-grey" type="text" name="comment" placeholder="Comment*" required>
+		  <button class="w3-btn w3-section w3-right" onclick="validateForm()">SEND MESSAGE</button>
+	  </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48">
+  <div class="w3-xlarge w3-padding-8">
+    <a href="https://www.facebook.com" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.pinterest.com/" target="_blank" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+    <a href="https://twitter.com/" target="_blank" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.flickr.com/" target="_blank" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p class="my-copyright"><span class="my-title"><span>e</span>Painting</span> &copy; 2016. All rights reserved.</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

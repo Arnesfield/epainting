@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home | ePainting</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="assets/styles/w3.css"/>
+<link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="assets/styles/style.css"/>
+<link rel="shortcut icon" type="image/png" href="assets/epainting.png"/>
+<script src="assets/jquery/jquery-3.1.1.js"></script>
+<script src="assets/scripts/script.js"></script>
+
+<style>
+.my-collection img {margin-bottom: 4px;}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate-top" style="position:fixed;">
+  <ul class="topnav" id="myTopnav">
+	<li class="w3-teal"><strong><a href="index.html" class="my-title w3-hover-white"><span>e</span>Painting</a></strong></li>
+    <li><a href="index.html"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+	<li><a href="sub/product.html"><i class="fa fa-paint-brush"></i>&nbsp; Product</a></li>
+	<li><a href="sub/about.html"><i class="fa fa-user"></i>&nbsp; About</a></li>
+	<li><a href="sub/contact.html"><i class="fa fa-envelope"></i>&nbsp; Contact Us</a></li>
+	<li class="icon">
+	  <a href="javascript:void(0);" onclick="showNavigation()">&#9776;</a>
+	</li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-animate-zoom">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <div class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity my-title"><span class="w3-text-teal">e</span>P<i class="fa fa-paint-brush w3-text-white"></i>inting</div>
+  </div>
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+	<a href="#next" class="w3-text-white w3-hover-text-light-grey my-size-4"><i class="fa fa-angle-down"></i></a>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="next"></div>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-animate-top">ABOUT <span class="my-title"><span>e</span>Painting</span></h3>
+  <p class="w3-center w3-animate-opacity"><em>- we sell paintings online -</em></p>
+  <p class="w3-animate-opacity">
+	Welcome to <span class="my-title"><span>e</span>Painting</span>! It is a one-of-a-kind online art gallery where buyers could buy 
+	famous paintings painted by the most renowned artists and painters worldwide. 
+	Enjoy exploring fascinating regions of the world through the landscape, cultural, 
+	and abstract paintings of exceptional world artists. Whether you are looking for an original 
+	abstract painting, a modern art painting, or a limited edition watercolor print signed by the artist, 
+	<span class="my-title"><span>e</span>Painting</span> has over 370,000 original paintings and prints for sale.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large w3-animate-left">
+      <p><b>Who are we?</b></p><br>
+	  <i class="fa fa-paint-brush w3-text-teal" style="font-size:12em;"></i>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large w3-animate-right">
+      <p>
+		We are a group of art collectors who sells and auctions famous paintings made by different artists. 
+		Most of our buyers are famous museum curators have bought the paintings we sell and some of them 
+		are now being displayed in museums like the Louvre in Paris, France. 
+	  </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16 w3-animate-opacity">what we're good at:</p>
+  <p class="w3-wide">paintings</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:90%"></div>
+  </div>
+  <p class="w3-wide">photography</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:85%"></div>
+  </div>
+  <p class="w3-wide">photoshop</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:75%"></div>
+  </div>
+  <div class="w3-center w3-animate-opacity">
+	<a href="sub/about.html" class="w3-btn w3-light-grey w3-padding-xlarge" style="margin-top:64px">READ MORE &raquo;</a>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-animate-bottom">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Paintings Sold
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-animate-zoom my-animate my-element" style="dislay:none">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide w3-text-shadow">PRODUCTS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="my-collection w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-animate-top">OUR COLLECTION</h3>
+  <p class="w3-center w3-animate-opacity"><em>Here are some of our latest collection of paintings and art.<br/> Click on the images to make them bigger!</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center w3-animate-opacity my-collection">
+    <div class="w3-quarter">
+      <img src="assets/paintings/french-collection/p1.jpg" onclick="onClick(this,'Arnold Bocklin',5000)" class="w3-hover-opacity" alt="The Sanctuary of Hercules">
+      <img src="assets/paintings/intimate-impressions/p5.jpg" onclick="onClick(this,'Jean-Baptitste-Camille-Corot',5000)" class="w3-hover-opacity" alt="The Artist's Studio">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="assets/paintings/mccrindle-collection/p2.jpg" onclick="onClick(this,'Carle Van Loo',5000)" class="w3-hover-opacity" alt="A Seated Male Nude">
+      <img src="assets/paintings/french-collection/p2.jpg" onclick="onClick(this,'Claude Monet',5000)" class="w3-hover-opacity" alt="Woman with a Parasol - Madame Monet and Her Son">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="assets/paintings/music-collection/p3.jpg" onclick="onClick(this,'Hendrick ter Brugghen',5000)" class="w3-hover-opacity" alt="Bagpipe Player">
+      <img src="assets/paintings/intimate-impressions/p4.jpg" onclick="onClick(this,'Edouard Vuillard',5000)" class="w3-hover-opacity" alt="Vase of Flowers on a Mantelpiece">
+    </div>
+	
+	<div class="w3-quarter">
+      <img src="assets/paintings/music-collection/p5.jpg" onclick="onClick(this,'Venetian 16th Century',5000)" class="w3-hover-opacity" alt="Orpheus">
+	  <img src="assets/paintings/mccrindle-collection/p6.jpg" onclick="onClick(this,'Robert Caney',5000)" class="w3-hover-opacity" alt="Stage Set Consisting Of Painted Panels, Fabrics, And Fans">
+	</div>
+  </div>
+  <div class="w3-center">
+	<a href="sub/product.html#next" class="w3-btn w3-light-grey w3-padding-xlarge w3-animate-opacity" style="margin-top:64px;display:inline-block;">SEE MORE &raquo;</a>
+	<a onclick="transaction()" class="transaction w3-btn w3-light-grey w3-padding-xlarge w3-animate-opacity" style="margin-top:64px;display:none;">CHECK OUT &raquo;</a>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal-container" class="w3-modal w3-black">
+  <span onclick="exitModal()" class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">
+	<i class="fa fa-times"></i>
+  </span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img-container" class="w3-image"/>
+    <h3 id="painting" class="my-size-3"></h3>
+	<h4>by <span id="painter" class="w3-text-teal"></span></h4>
+	<p id="desc" class="w3-opacity" style="width:80%;margin:0 auto;"></p>
+	<p id="price" class="w3-opacity"></p>
+	<div class="w3-center" style="margin-bottom: 12px;">
+	  <a onclick="exitModal()" class="w3-btn w3-hover-white w3-grey w3-padding-xlarge" style="display:inline-block;">&laquo; Back</a>
+	  <a onclick="addToCart()" class="w3-btn w3-hover-white w3-grey w3-padding-xlarge" style="display:inline-block;">Add to cart &raquo;</a>
+	  <a onclick="transaction()" class="transaction w3-btn w3-hover-white w3-grey w3-padding-xlarge w3-animate-opacity" style="display:none;">CHECK OUT &raquo;</a>
+	</div>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bg-chicago w3-display-container w3-animate-zoom">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide w3-text-shadow">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="next" class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-animate-opacity"><span class="my-title"><span>e</span>Painting</span> OFFICE</h3>
+  <p class="w3-center w3-animate-opacity"><em>We'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale w3-animate-left" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section w3-animate-right">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: epainting@epainting.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
+      <form name="contact-form" method="post">
+		  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+			<div class="w3-half">
+			  <input class="w3-input w3-border w3-hover-light-grey" type="text" name="name" placeholder="Name*" required>
+			</div>
+			<div class="w3-half">
+			  <input class="w3-input w3-border w3-hover-light-grey" type="text" name="email" placeholder="Email*" required>
+			</div>
+		  </div>
+		  <input class="w3-input w3-border w3-hover-light-grey" type="text" name="comment" placeholder="Comment*" required>
+		  <button class="w3-btn w3-section w3-right" onclick="validateForm()" alert("Message Sent!")>SEND MESSAGE</button> 
+	  </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48">
+  <div class="w3-xlarge w3-padding-8">
+    <a href="https://www.facebook.com" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.pinterest.com/" target="_blank" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+    <a href="https://twitter.com/" target="_blank" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.flickr.com/" target="_blank" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p class="my-copyright"><span class="my-title"><span>e</span>Painting</span> &copy; 2016. All rights reserved.</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</body>
+</html>

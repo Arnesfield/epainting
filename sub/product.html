@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product | ePainting</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="../assets/styles/w3.css"/>
+<link rel="stylesheet" href="../assets/font-awesome-4.6.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../assets/styles/style.css"/>
+<link rel="shortcut icon" type="image/png" href="../assets/epainting.png"/>
+<script src="../assets/jquery/jquery-3.1.1.js"></script>
+<script src="../assets/scripts/script.js"></script>
+
+<style>
+.bgimg-2 {min-height:75%;}
+.my-collection img {margin-bottom: 7px;}
+
+@media screen and (min-width: 600px) {
+	.my-div-center .my-icon {font-size:14em;}
+	.my-icon-small {display:none;}
+}
+@media screen and (max-width: 601px) {
+	.my-div-center h1 {text-align:center;}
+	.my-div-center .my-icon {font-size:8em;}
+	.my-icon-small {display:inline-block;}
+}
+
+.w3-container {min-height: 100%; display:table;width:100%;}
+.w3-container .my-div-center {display:table-cell;vertical-align:middle;}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate-top" style="position:fixed;">
+  <ul class="topnav" id="myTopnav">
+	<li class="w3-teal"><strong><a href="../index.html" class="my-title w3-hover-white"><span>e</span>Painting</a></strong></li>
+    <li><a href="../index.html"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+	<li><a href="product.html"><i class="fa fa-paint-brush"></i>&nbsp; Product</a></li>
+	<li><a href="about.html"><i class="fa fa-user"></i>&nbsp; About</a></li>
+	<li><a href="contact.html"><i class="fa fa-envelope"></i>&nbsp; Contact Us</a></li>
+	<li class="icon">
+	  <a href="javascript:void(0);" onclick="showNavigation()">&#9776;</a>
+	</li>
+  </ul>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container my-nav-margin w3-animate-zoom">
+  <div class="w3-display-middle w3-animate-opacity" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-shadow w3-text-light-grey w3-wide">PRODUCTS</span>
+  </div>
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+	<a href="#next" class="w3-text-white w3-hover-text-light-grey my-size-4"><i class="fa fa-angle-down"></i></a>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div id="next" class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-container w3-padding-64 w3-center w3-opacity w3-margin-bottom">
+  <div class="w3-clear"></div>
+  <h1 class="w3-animate-opacity"><b>OUR COLLECTION</b></h1>
+  <p><b>Our collection of well-maintained paintings made for you.</b></p>
+</header>
+
+<!-- Photo Grid -->
+<div class="my-collection w3-row-padding" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img onclick="onClick(this,'Arnold Bocklin',5000)" alt="The Sanctuary of Hercules" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/french-collection/p1.jpg"/>
+    <img onclick="onClick(this,'Jean-Baptiste-Camille-Corot',5000)" alt="A View near Volterra" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/french-collection/p3.jpg"/>
+	<img onclick="onClick(this,'Edouard Vuillard',5000)" alt="Child Wearing a Red Scarf" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/intimate-impressions/p3.jpg"/>
+	<img onclick="onClick(this,'Edouard Vuillard',5000)" alt="Vase of Flowers on a Mantelpiece" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/intimate-impressions/p4.jpg"/>
+	<img onclick="onClick(this,'Cariani',5000)" alt="A Concert" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/music-collection/p1.jpg"/>
+	<img onclick="onClick(this,'Edouard Manet',5000)" alt="The Old Musician" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/music-collection/p2.jpg"/>
+	<img onclick="onClick(this,'Barolomeo Pinelli',5000)" alt="A Peasant Family Cooking over a Campfire" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/mccrindle-collection/p1.jpg"/>
+	<img onclick="onClick(this,'Carle Van Loo',5000)" alt="A Seated Male Nude" class="w3-hover-opacity w3-animate-left" src="../assets/paintings/mccrindle-collection/p2.jpg"/>
+  </div>
+
+  <div class="w3-third">
+    <img onclick="onClick(this,'Ippolito Caffi',5000)" alt="Interior of the Colosseum" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/mccrindle-collection/p3.jpg"/>
+    <img onclick="onClick(this,'Jan Steen',5000)" alt="The Dancing Couple" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/music-collection/p4.jpg"/>
+	<img onclick="onClick(this,'Edgar Degas',5000)" alt="Horses in a Meadow" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/intimate-impressions/p1.jpg"/>
+	<img onclick="onClick(this,'Edouard Manet',5000)" alt="Flowers in a Crystal Vase" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/intimate-impressions/p2.jpg"/>
+	<img onclick="onClick(this,'Hendrick ter Brugghen',5000)" alt="Bagpipe Player" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/music-collection/p3.jpg"/>
+	<img onclick="onClick(this,'Jean-Baptitste-Camille-Corot',5000)" alt="The Artist's Studio" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/intimate-impressions/p5.jpg"/>
+	<img onclick="onClick(this,'John Singer Sargent',5000)" alt="Cairo" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/mccrindle-collection/p4.jpg"/>
+	<img onclick="onClick(this,'Claude Monet',5000)" alt="Woman with a Parasol - Madame Monet and Her Son" class="w3-hover-opacity w3-animate-opacity" src="../assets/paintings/french-collection/p2.jpg"/>
+  </div>
+
+  <div class="w3-third">
+    <img onclick="onClick(this,'Robert Caney',5000)" alt="Interior of an Ancient Egyptian Temple" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/mccrindle-collection/p5.jpg"/>
+	<img onclick="onClick(this,'Paul C&eacute;zanne',5000)" alt="The Peppermint Bottle" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/french-collection/p4.jpg"/>
+	<img onclick="onClick(this,'Paul Gauguin',5000)" alt="Haystacks in Brittany" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/french-collection/p6.jpg"/>
+    <img onclick="onClick(this,'William Michael Harnett',5000)" alt="The Old Violin" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/music-collection/p6.jpg"/>
+	<img onclick="onClick(this,'Paul Gauguin',5000)" alt="Fatata te Miti (By the Sea)" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/french-collection/p5.jpg"/>
+	<img onclick="onClick(this,'Robert Caney',5000)" alt="Stage Set Consisting Of Painted Panels, Fabrics, And Fans" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/mccrindle-collection/p6.jpg"/>
+	<img onclick="onClick(this,'Paul C&eacute;zanne',5000)" alt="The Battle of Love" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/intimate-impressions/p6.jpg"/>
+	<img onclick="onClick(this,'Venetian 16th Century',5000)" alt="Orpheus" class="w3-hover-opacity w3-animate-right" src="../assets/paintings/music-collection/p5.jpg"/>
+  </div>
+  
+  <div class="w3-center" style="clear:both;">
+	  <div class="w3-center transaction" style="display:none;margin-top:64px;">
+		<a onclick="transaction()" class="w3-btn w3-hover-lightgrey w3-light-grey w3-padding-xlarge">CHECK OUT &raquo;</a>
+	  </div>
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal-container" class="w3-modal w3-black">
+  <span onclick="exitModal()" class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-display-topright" style="padding:0.01em 16px;" title="Close Modal Image">
+	<i class="fa fa-times"></i>
+  </span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img-container" class="w3-image"/>
+    <h3 id="painting" class="my-size-3"></h3>
+	<h4>by <span id="painter" class="w3-text-teal"></span></h4>
+	<p id="desc" class="w3-opacity" style="width:80%;margin:0 auto;"></p>
+	<p id="price" class="w3-opacity"></p>
+	<div class="w3-center" style="margin-bottom: 12px;">
+	  <a onclick="exitModal()" class="w3-btn w3-hover-white w3-grey w3-padding-xlarge" style="display:inline-block;">&laquo; Back</a>
+	  <a onclick="addToCart()" class="w3-btn w3-hover-white w3-grey w3-padding-xlarge" style="display:inline-block;">Add to cart &raquo;</a>
+	  <a onclick="transaction()" class="transaction w3-btn w3-hover-white w3-grey w3-padding-xlarge w3-animate-opacity" style="display:none;">CHECK OUT &raquo;</a>
+	</div>
+  </div>
+</div>
+
+<!-- Last -->
+<div class="w3-row-padding w3-padding-64 w3-light-grey" style="min-height: 50%; padding: 16px;">
+  <div class="my-div-center">
+	  <div class="w3-content">
+		<div class="w3-center">
+		  <h1 class="w3-animate-top">Like what you see? <i class="fa fa-envelope w3-text-teal my-icon-small"></i></h1>
+		  <h5 class="w3-animate-opacity">
+			  Send us an e-mail or give us a call! 
+			  <br/>We'll answer all your inquiries and we would like to discuss our paintings' stories to you.
+		  </h5>
+		</div>
+		<div class="w3-center w3-hide-small w3-animate-zoom">
+		  <i class="fa my-icon fa-envelope w3-padding-16 w3-text-teal"></i>
+		</div>
+		<div class="w3-center w3-animate-opacity">
+		  <a href="contact.html" class="w3-btn w3-white w3-padding-xlarge" style="margin-top:32px">CONTACT US &raquo;</a>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48">
+  <div class="w3-xlarge w3-padding-8">
+    <a href="https://www.facebook.com" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.pinterest.com/" target="_blank" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+    <a href="https://twitter.com/" target="_blank" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.flickr.com/" target="_blank" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p class="my-copyright"><span class="my-title"><span>e</span>Painting</span> &copy; 2016. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
